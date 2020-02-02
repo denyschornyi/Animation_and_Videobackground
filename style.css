@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -17,5 +18,24 @@ body{
 }
 
 .wrap-block h1{
-    color: #fff;
+    color: #000000;
+    box-shadow: 28px 26px 30px 14px rgba(255,15,NaN,1);
+    font-family: 'Monoton', cursive;
+    animation-name: text-move;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/* ANIMATION */
+@keyframes text-move{
+    from{
+        text-align: center;
+        vertical-align: middle;
+    }
+    to{
+        margin-bottom: 30rem;
+    }
 }
