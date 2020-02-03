@@ -11,6 +11,11 @@ body{
     background-color: black;
     text-align: center;
     display: table;
+
+    animation-name: fadeOutDown;
+    animation-delay: 4.7s;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
 }
 
 .text{
@@ -21,34 +26,7 @@ body{
     font-size: 6rem;
 
 }
-
-@keyframes fadeInUp {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 100%, 0);
-      transform: translate3d(0, 100%, 0);
-    }
   
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
-  }
-
-  @keyframes fadeOutDown {
-    0% {
-       opacity: 1;
-       transform: translateY(0);
-    }
-    100% {
-       opacity: 0;
-       transform: translateY(-20px);
-    }
- } 
-  
-
-
 .first{
     opacity: 0;
     animation-name: fadeInUp;
@@ -81,13 +59,17 @@ body{
 }
 
 
-
-/*
 .section{
     min-height: 100vh;
     text-align: center;
     width: 100%;
-    display: table;
+    display: table; 
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 5.4s;
+    animation-duration: 0.6s;
+    
+    z-index: 10 ;
 }
 
 .wrap-block{
@@ -95,16 +77,16 @@ body{
     vertical-align: middle;
 }
 
-.wrap-block h1{
+.section h1{
     color: #000000;
     box-shadow: 28px 26px 30px 14px rgba(255,15,NaN,1);
     font-family: 'Monoton', cursive;
     animation-name: text-move;
     animation-duration: 3s;
-    animation-delay: 2s;
+    animation-delay: 6.1s;
     animation-fill-mode: forwards;
 }
-*/
+
 
 
 /* ANIMATION */
@@ -117,3 +99,34 @@ body{
         margin-bottom: 30rem;
     }
 }
+
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  @keyframes fadeOutDown {
+    0% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+    100% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+ } 
+
+ @keyframes change-background{
+     from{}
+     to{}
+ }
